@@ -1,0 +1,112 @@
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.App {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Target divs inside form or direct children of App's main div for spacing */
+form div, .App > div > div { 
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: calc(100% - 22px); /* Adjusted for padding and border */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 5px; /* Add some margin between buttons */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+li:hover {
+  background-color: #f9f9f9;
+}
+
+.counter-container {
+    padding: 1rem;
+}
+
+.counter-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.counter-current {
+    margin-bottom: 1rem;
+}
+
+.counter-buttons button {
+    margin-right: 0.5rem;
+}
+
+.counter-step {
+    margin-top: 1rem;
+}
+
+.step-input {
+    margin-left: 0.5rem;
+    width: 60px;
+}
+
+.counter-history {
+    margin-top: 1rem;
+}
