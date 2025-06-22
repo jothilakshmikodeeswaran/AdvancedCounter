@@ -22,7 +22,7 @@ function AdvancedCounter() {
         return () => {
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [count, step, history]);
+    }, [step]);
 
     const handleIncrease = () => {
         const newCount = count + step;
